@@ -125,6 +125,6 @@
     "test:perf": "cross-env NODE_ENV=production babel-node test/perf",
     "preversion": "npm run clean && npm run build && npm run test:all",
     "postversion": "echo 'Uninstall react-router to fix npm issue' && npm uninstall react-router",
-    "prepublish": "npm run clean && npm run build",
+    "prepublish": "npm run clean && npm run build"
   }
 }
