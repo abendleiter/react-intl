@@ -108,7 +108,7 @@ export default class FormattedMessage extends Component {
             });
         }
 
-        let descriptor       = {id, description, defaultMessage};
+        let descriptor       = {id, description: ctx, defaultMessage: msg};
         let formattedMessage = formatMessage(descriptor, tokenizedValues || values);
 
         let nodes;
