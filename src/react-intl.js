@@ -20,5 +20,5 @@ export {default as FormattedTime} from './components/time';
 export {default as FormattedRelative} from './components/relative';
 export {default as FormattedNumber} from './components/number';
 export {default as FormattedPlural} from './components/plural';
-export {default as FormattedMessage} from './components/message';
+export {default as M} from './components/message';
 export {default as FormattedHTMLMessage} from './components/html-message';

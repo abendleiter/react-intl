@@ -35,9 +35,10 @@ export const intlShape = shape({
 });
 
 export const messageDescriptorPropTypes = {
-    id            : string.isRequired,
-    description   : string,
-    defaultMessage: string,
+    id: string.isRequired,
+    ctx: string,  // msgctxt
+    msg: string,  // msgid
+    help: string, // #. Translator comment
 };
 
 export const dateTimeFormatPropTypes = {

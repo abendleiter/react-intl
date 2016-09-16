@@ -60,8 +60,9 @@ export default class FormattedMessage extends Component {
 
         const {
             id,
-            description,
-            defaultMessage,
+            ctx,
+            msg,
+            help,
             values,
             tagName,
             children,
