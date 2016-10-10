@@ -181,10 +181,8 @@ export function formatMessage(config, state, messageDescriptor = {}, values = {}
         defaultFormats,
     } = config;
 
-    const {
-        id,
-        defaultMessage,
-    } = messageDescriptor;
+    const {id} = messageDescriptor;
+    const defaultMessage = messageDescriptor.defaultMessage || messageDescriptor.msg;
 
     // `id` is a required field of a Message Descriptor.
     invariant(id, '[React Intl] An `id` must be provided to format a message.');
